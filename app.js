@@ -103,7 +103,51 @@ for (var hourIndex = 0; hourIndex < hours.length; hourIndex++) {
  
     td.textContent = sum;
     megaTotalSalesCookies += sum;
+
 }
+
+function renderNewRow() {
+    var tr = document.createElement('tr');
+    table.appendChild(tr);
+    var td = document.createElement('td');
+    tr.appendChild(td);
+    var currentShop =shoplist[shoplist.length-1];
+    console.log(currentShop);
+    td.textContent = currentShop.location;
+    
+    for (var cellIndex = 0; cellIndex < hours.length; cellIndex++) {
+        var data = document.createElement('td');
+        tr.appendChild(data);
+        data.textContent = currentShop.hourlySales[cellIndex];
+
+    }
+      
+     var td = document.createElement('td');
+      tr.appendChild(td);
+      td.textContent = currentShop.dailySales;
+  }
 var td = document.createElement('td');
 footerRow.appendChild(td);
 td.textContent = megaTotalSalesCookies;
+
+function submitHandler(event) {
+    event.preventDefault();
+
+    var location = event.target.location.value;
+    var min = parseInt(event.target.min.value);
+    var max = parseInt(event.target.max.value);
+    var avg = parseFloat(event.target.avg.value);
+
+    var newShop = new Shops(location, min, max, avg);
+    
+
+    shoplist.push(newShop);
+    
+    renderNewRow();
+    footerRowFunction();
+
+
+}
+
+var shopsForm = document.getElementById("Form"); 
+shopsForm.addEventListener('submit', submitHandler);

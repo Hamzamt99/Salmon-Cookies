@@ -1,104 +1,91 @@
-body {
-  background-color: white;
+body{background-color:wheat;}
+header{
+    text-align: center;
+    font-size: 100px;
 }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+   
+  h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 10%;
+    padding: 1%;
+    border:2px black;
+    color: rgb(250,128,114);
+    background-color: aquamarine;
+  }
+  p{
+      text-align: center;
+      font-size: 50px;}
 
-header {
-  background-color: darkgray;
-  margin-bottom: 20px;
-  
-}
-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  z-index: -1;
-  
-}
-ul {
-  list-style-type: none;
-  width: 50%;
-  float: right;
-  margin: auto;
-}
+   .index1 {
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        font-size: 30px;
+     
+      }
 
-li {
-  display: inline;
-  padding: 0px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
+      nav li {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        font-size: 30px;
+     
+      }
+      .loc-list{
+        text-align:left;
+        font-family: cursive;
+        font-size: 25px;
 
-#logo {
-  float: left;
-  margin: 20px 0px 20px 100px;
-  width: 200px;
-  height: 70px;
-  background-color: lightblue;
-  z-index: +1;
+      }
+      .plocation{
+        font-family: cursive;
+        color: red; 
+      }
+       
+      .giftp{
+        font-family: initial;
+        color: brown;   
+          
+      }
+     .giftimg{
+        display:inline;
+        width: 25%;
+        margin-left: 6%;
+     }
+    .aboutp{
+        font-size: 25px;
+        font-family: sans-serif;
+        color: rgb(59, 39, 39); 
+        text-align: left;
+    }
+    #submit {
+        height: 50px;
+        width: 150px;
+        background-color:black;
+        color: white;
+        font-family: verdana;
+      }
+.salesbody{
+    background-image: url("img/chinook.jpg");
 }
-main {
-  width: 100%;
+#CookiesShopForm{
+    font-family: inherit;
+    
 }
-section {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 100%;
-  text-align: center;
-}
-#hero-img {
-  display: inline-block;
-  background-color: lightblue;
-  height: 450px;
-  width: 960px;
-}
-.section2Boxes {
-  display: inline-block;
-  width: 300px;
-  height: 375px;
-  background-color: lightblue;
-}
-#section2-box2 {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-section:nth-of-type(3) {
-  display: flex;
-  justify-content: center;
-}
-.section3Boxes {
-  width: 480px;
-  height: 400px;
-}
-.section3Boxes:nth-of-type(1) {
-  background-color: lightblue;
-}
-#text-feature {
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-  width: 460px;
-}
-#text-feature h4 {
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-#button-container {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 10px;
-}
-button {
-  width: 200px;
-  height: 40px;
-}
-textarea {
-  height: 350px;
-}
-footer {
-  background-color: darkgray;
-  margin-bottom: 20px;
-  height: 200px;
+#cookiesshops{
+    border: 1px solid black;
+    text-align: left;
+    padding: 15px;
+    border-collapse: collapse;
 }
