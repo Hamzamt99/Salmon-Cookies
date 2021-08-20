@@ -1,91 +1,70 @@
-body{background-color:wheat;}
-header{
-    text-align: center;
-    font-size: 100px;
+* {
+  font-family: helvetica, sans-serif;
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-   
-  h1 {
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin: 10%;
-    padding: 1%;
-    border:2px black;
-    color: rgb(250,128,114);
-    background-color: aquamarine;
-  }
-  p{
-      text-align: center;
-      font-size: 50px;}
 
-   .index1 {
-        text-decoration: none;
-        display: inline-block;
-        text-align: center;
-        margin: 50px;
-        font-size: 30px;
-     
-      }
-
-      nav li {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-        text-decoration: none;
-        display: inline-block;
-        text-align: center;
-        margin: 50px;
-        font-size: 30px;
-     
-      }
-      .loc-list{
-        text-align:left;
-        font-family: cursive;
-        font-size: 25px;
-
-      }
-      .plocation{
-        font-family: cursive;
-        color: red; 
-      }
-       
-      .giftp{
-        font-family: initial;
-        color: brown;   
-          
-      }
-     .giftimg{
-        display:inline;
-        width: 25%;
-        margin-left: 6%;
-     }
-    .aboutp{
-        font-size: 25px;
-        font-family: sans-serif;
-        color: rgb(59, 39, 39); 
-        text-align: left;
-    }
-    #submit {
-        height: 50px;
-        width: 150px;
-        background-color:black;
-        color: white;
-        font-family: verdana;
-      }
-.salesbody{
-    background-image: url("img/chinook.jpg");
+#welc {
+  font-family: Passion One, cursive;
+  color: rgb(44, 28, 26);
 }
-#CookiesShopForm{
-    font-family: inherit;
-    
+/* For the table*/
+td {
+  background-color: salmon;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 1.2em;
 }
-#cookiesshops{
-    border: 1px solid black;
-    text-align: left;
-    padding: 15px;
-    border-collapse: collapse;
+
+th {
+  background-color: gray;
+  color: white;
+  padding: 2px;
+  border-radius: 8px;
+  font-size: 1.2em;
+
+}
+
+label {
+  color: salmon;
+}
+
+legend {
+  color: salmon;
+  font-family: 'Righteous', cursive;
+}
+
+.total {
+  font-weight: bold;
+}
+
+#title{
+  
+  margin-left: 50px;
+  font-family: Arial, sans-serif;
+  color: beige;
+}
+
+#intro{
+  font-family: Georgia, serif;
+  color: yellow;
+
+}
+
+*{
+  background-color: darkblue;
+}
+
+h3{
+
+  font-family: Garamond, serif;
+  color: violet;
+}
+ol{
+
+  color: whitesmoke;
+}
+#submit{
+  
+  
+  background-color: salmon;
 }
