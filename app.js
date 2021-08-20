@@ -142,12 +142,43 @@ function submitHandler(event) {
     
 
     shoplist.push(newShop);
-    
+
+    table.removeChild(footerRow);
+
     renderNewRow();
-    footerRowFunction();
+    
+    
+   
+table.appendChild(footerRow);
+var th = document.createElement('th');
+footerRow.appendChild(th);
+th.textContent = 'Totals';
+
+var megaTotalSalesCookies = 0;
+for (var hourIndex = 0; hourIndex < hours.length; hourIndex++) {
+    var td = document.createElement('td');
+    footerRow.appendChild(td);
+    var sum = 0;
+    for (var shopIndexCell = 0; shopIndexCell < shoplist.length; shopIndexCell++) {
+        var currentShop = shoplist[shopIndexCell];
+
+        sum += currentShop.hourlySales[hourIndex];
+    }
+ 
+    td.textContent = sum;
+    megaTotalSalesCookies += sum;
+
+}
 
 
 }
+    
+  
+
+    
+
+
+
 
 var shopsForm = document.getElementById("Form"); 
 shopsForm.addEventListener('submit', submitHandler);
